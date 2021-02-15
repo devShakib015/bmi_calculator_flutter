@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/convert_inch_cm.dart';
 import 'package:flutter/material.dart';
 import 'reusable_card.dart';
 import 'reusable_gender_card_child.dart';
@@ -34,6 +35,16 @@ class _BmiInputPageState extends State<BmiInputPage> {
       appBar: AppBar(
         title: Text("BMI Calculator"),
         actions: [
+          IconButton(
+            icon: Icon(Icons.calculate_outlined),
+            tooltip: "Convert inch To cm",
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ConvertInchCm()),
+              );
+            },
+          ),
           IconButton(
             icon: Icon(Icons.info_outline),
             onPressed: () {
