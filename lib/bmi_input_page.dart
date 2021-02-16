@@ -34,6 +34,7 @@ class _BmiInputPageState extends State<BmiInputPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("BMI Calculator"),
+        leading: Icon(Icons.fitness_center_outlined),
         actions: [
           IconButton(
             icon: Icon(Icons.calculate_outlined),
@@ -51,7 +52,7 @@ class _BmiInputPageState extends State<BmiInputPage> {
               showAboutDialog(
                 applicationLegalese: "Copyright © 2021 | venomShakib",
                 context: context,
-                applicationVersion: "1.1.1",
+                applicationVersion: "1.1.2",
                 applicationName: "BMI Calculator",
                 applicationIcon: Image.asset(
                   "images/icon.png",
